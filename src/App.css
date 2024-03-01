@@ -1,0 +1,283 @@
+body {
+  background-color: #282c34;
+}
+
+.message-container {
+  background-color: rgb(44, 47, 53);
+  max-height: 700px;
+  width: 750px;
+  overflow-y: auto;
+}
+
+/* Breite und Farbe der Scrollbar */
+.message-container::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f1f1f1;
+}
+
+/* Farbe des Scrollbar-Griffes */
+.message-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+/* Beim Überfahren mit dem Mauszeiger, Farbe des Scrollbar-Griffes */
+.message-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+a{
+  color:#0b93f6;
+}
+
+.header1{
+  display: flex;
+  align-items: center;
+}
+
+.header2{
+  float: right;
+}
+
+.infoLI {
+  color: #878fa0;
+  display: flex;
+  align-items: right;
+  margin-bottom: 1rem
+}
+
+#time{
+  display: inline-block;
+  color:#929397;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 0.8rem;
+}
+
+.message {
+  display: flex;
+  width: auto;
+  align-items: center;
+  background-color: rgb(44, 47, 53);
+
+  margin-top: 1rem;
+
+  flex-direction: column;
+
+}
+
+.message:hover{
+  background-color: #282c34;
+}
+
+#mesg1{
+  display: flex;
+  background-color: rgba(44, 47, 53, 0);
+  color:#e5e5ea;
+  padding-top: 0rem;
+  margin: 0;
+  border-radius: 0;
+  align-self: flex-start; 
+
+}
+
+#mesg2{
+  display: flex;
+  align-items: left;
+  background-color: rgba(73, 44, 189, 0);
+  color:#e5e5ea;
+  padding-left: 3rem;
+  margin: 0;
+  border-radius: 0;
+  align-self: flex-start; 
+ 
+}
+
+
+.btnLO{
+  background-color: #454c5a;
+  color:#e5e5ea;
+  border-radius: 18px;
+  margin: 1rem;
+  font-size: 1rem;
+
+}
+
+.btn{
+  background-color: #454c5a;
+  color:#e5e5ea;
+  border-radius: 18px;
+  margin: 1rem;
+
+}
+
+.btn:hover, .btnLO:hover,.btnSend:hover, .btnLI:hover{
+  background-color: #5c6578;
+}
+
+
+
+.btnSend, .btnLI{
+  background-color: #454c5a;
+  color:#e5e5ea;
+  border-radius: 18px;
+  margin: 1rem;
+
+}
+
+
+.App {
+  text-align: center;
+  max-width: 728px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white
+}
+
+.App header {
+  background-color: #181717;
+  height: 10vh;
+  min-height: 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  max-width: 728px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(40, 37, 53);
+}
+
+main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+form button {
+  width: 20%;
+  background-color: rgb(56, 56, 143);
+}
+
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: #1e2127;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  
+}
+
+button {
+  background-color: #282c34; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+
+
+ul, li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+}
+.received p {
+  background: #e5e5ea;
+  color: black;
+}
+
+#pic{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+img {
+  max-width: 500px;
+  max-height: 400px;
+  margin: 2px 5px;
+}
